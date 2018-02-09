@@ -65,5 +65,8 @@ class Kernel extends HttpKernel
         'level' => \Bican\Roles\Middleware\VerifyLevel::class,*/
         'roleshinobi' => \Caffeinated\Shinobi\Middleware\UserHasRole::class,
         'permissionshinobi' => \Caffeinated\Shinobi\Middleware\UserHasPermission::class,
+        'role' => \App\Http\Middleware\RoleMiddleware::class,
+        'permission' => \App\Http\Middleware\PermissionMiddleware::class,
+
     ];
 }
